@@ -218,3 +218,31 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# REVMA local data, credentials, private reference materials and backups
+reference-privee/
+data/
+backups/
+.env
+.env.*
+!.env.example
+node_modules/
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*-wal
+*-shm
+*.bak
+*.backup
+*.old
+*.orig
+*.swp
+*.swo
+*.tmp
+*.log
+
+# Frontend build/dependencies
+frontend/node_modules/
+frontend/dist/
+*.tsbuildinfo

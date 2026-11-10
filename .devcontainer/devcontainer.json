@@ -1,0 +1,29 @@
+{
+  "name": "REVMA V2 (Docker)",
+  "dockerComposeFile": [
+    "../compose.yaml",
+    "docker-compose.yml"
+  ],
+  "service": "frontend",
+  "runServices": [
+    "backend",
+    "frontend"
+  ],
+  "workspaceFolder": "/workspaces/revma",
+  "shutdownAction": "stopCompose",
+  "overrideCommand": false,
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "typescript.tsdk": "/workspaces/revma/frontend/node_modules/typescript/lib",
+        "typescript.enablePromptUseWorkspaceTsdk": true,
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/bin/bash"
+          }
+        },
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}

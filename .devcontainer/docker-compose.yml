@@ -1,0 +1,5 @@
+services:
+  frontend:
+    volumes:
+      - .:/workspaces/revma
+      - frontend_node_modules:/workspaces/revma/frontend/node_modules
